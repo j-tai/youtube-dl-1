@@ -1,3 +1,50 @@
+version 2021.04.17
+
+Core
++ [utils] Add support for experimental HTTP response status code
+  308 Permanent Redirect (#27877, #28768)
+
+Extractors
++ [lbry] Add support for HLS videos (#27877, #28768)
+* [youtube] Fix stretched ratio calculation
+* [youtube] Improve stretch extraction (#28769)
+* [youtube:tab] Improve grid extraction (#28725)
++ [youtube:tab] Detect series playlist on playlists page (#28723)
++ [youtube] Add more invidious instances (#28706)
+* [pluralsight] Extend anti-throttling timeout (#28712)
+* [youtube] Improve URL to extractor routing (#27572, #28335, #28742)
++ [maoritv] Add support for maoritelevision.com (#24552)
++ [youtube:tab] Pass innertube context and x-goog-visitor-id header along with
+  continuation requests (#28702)
+* [mtv] Fix Viacom A/B Testing Video Player extraction (#28703)
++ [pornhub] Extract DASH and HLS formats from get_media end point (#28698)
+* [cbssports] Fix extraction (#28682)
+* [jamendo] Fix track extraction (#28686)
+* [curiositystream] Fix format extraction (#26845, #28668)
+
+
+version 2021.04.07
+
+Core
+* [extractor/common] Use compat_cookies_SimpleCookie for _get_cookies
++ [compat] Introduce compat_cookies_SimpleCookie
+* [extractor/common] Improve JSON-LD author extraction
+* [extractor/common] Fix _get_cookies on python 2 (#20673, #23256, #20326,
+  #28640)
+
+Extractors
+* [youtube] Fix extraction of videos with restricted location (#28685)
++ [line] Add support for live.line.me (#17205, #28658)
+* [vimeo] Improve extraction (#28591)
+* [youku] Update ccode (#17852, #28447, #28460, #28648)
+* [youtube] Prefer direct entry metadata over entry metadata from playlist
+  (#28619, #28636)
+* [screencastomatic] Fix extraction (#11976, #24489)
++ [palcomp3] Add support for palcomp3.com (#13120)
++ [arnes] Add support for video.arnes.si (#28483)
++ [youtube:tab] Add support for hashtags (#28308)
+
+
 version 2021.04.01
 
 Extractors
